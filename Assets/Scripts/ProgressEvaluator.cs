@@ -371,7 +371,7 @@ public class ProgressEvaluator : MonoBehaviour
     {
         Debug.LogWarning("PROGRESS EVALUATOR: Remember to also check your progress against the Status-xPercent.png files and " +
             "Status-100Percent-Windows or Status-100Percent-Mac.app executables.");
-        using BinaryWriter writer = new BinaryWriter(File.Open("ProjectSettings\\ProgEv", FileMode.Create));
+        using BinaryWriter writer = new BinaryWriter(File.Open("ProjectSettings/ProgEv", FileMode.Create));
         writer.Write(evalGrade.ToString());
         writer.Write(studentNumber);
         writer.Write(DateTime.Now.ToString("MM/dd/yyyy"));
